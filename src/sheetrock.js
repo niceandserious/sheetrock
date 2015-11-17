@@ -379,7 +379,7 @@
       // Use extracted column labels, the first row, or column letter.
       columnLabels = cols.map(function (col, i) {
         if (col.label) {
-          return col.label.replace(/\s/g, '');
+          return col.label;
         } else {
           // Get column labels from the first row of the response.
           attributes.last = attributes.last + 1;
